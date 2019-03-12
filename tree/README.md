@@ -43,7 +43,7 @@
     对于一颗二叉树，深度优先搜索(Depth First Search)是沿着树的深度遍历树的节点，尽可能深的搜索树的分支。
     深度遍历有重要的三种方法，分别叫做先序遍历（preorder），中序遍历（inorder）和后序遍历（postorder），
     它们之间的不同在于访问每个节点的次序不同。
-    ![image](https://github.com/qtccz/Practice/blob/master/tree/images/二叉树遍历.jpg)
+    ![image](https://github.com/qtccz/Practice/raw/master/tree/images/二叉树遍历.jpg)
 
     1、先序遍历
         顺序如右：根节点->左子树->右子树  （ABC DEH FGK）
