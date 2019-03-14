@@ -43,10 +43,9 @@ def radix_sort(lists, radix=10):
 
 def main():
     import numpy as np
-    from collections import deque
-    lists = list(deque(np.random.randint(0, 100, size=2)))
-    radix_list = radix_sort(lists)
-    print(radix_list)
+    lists = list(np.random.randint(0, 100, size=10))
+    print("排序前", lists)
+    print("排序后", radix_sort(lists))
 
 
 if __name__ == '__main__':

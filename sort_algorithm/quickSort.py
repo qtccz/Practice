@@ -24,11 +24,11 @@ def quick_sort(array, left, right):
         while left < right and array[right] > key:
             right -= 1
         array[left] = array[right]
-        # print('right', array)
+        print('right', array)
         while left < right and array[left] <= key:
             left += 1
         array[right] = array[left]
-        # print('left', array)
+        print('left', array)
     array[right] = key
     quick_sort(array, low, left - 1)
     quick_sort(array, left + 1, high)
@@ -37,12 +37,9 @@ def quick_sort(array, left, right):
 
 def main():
     import numpy as np
-    alists = np.random.randint(0, 100, size=10)
-    print(quick_sort(alists, 0, np.size(alists) - 1))
-
-    # sorted_arr = np.sort(alists)
-    # quick_sort(alists, 0, np.size(alists) - 1)
-    # assert (sorted_arr.all() == alists.all())
+    alist = list(np.random.randint(0, 100, size=10))
+    print("排序前", alist)
+    print("排序后", quick_sort(alist, 0, np.size(alist) - 1))
 
 
 if __name__ == '__main__':

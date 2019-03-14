@@ -30,8 +30,10 @@ def shell_sort(lists):
 
 
 def main():
-    alist = [8, 6, 4, 9, 7, 3, 2, -4, 0, -100, 99]
-    print(shell_sort(alist))
+    import numpy as np
+    lists = list(np.random.randint(-100, 100, size=10))
+    print("排序前", lists)
+    print("排序后", shell_sort(lists))
 
 
 if __name__ == '__main__':

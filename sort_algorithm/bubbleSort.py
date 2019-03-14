@@ -18,7 +18,7 @@
 
 def bubble_sort(lists):
     count = len(lists)
-    for i in range(count - 1, 0, -1):  # range(count - 1, 0, -1) 表示每次便利需要比较的次数，逐渐减小的
+    for i in range(count - 1, 0, -1):  # range(count - 1, 0, -1) 表示每次遍历需要比较的次数，逐渐减小的
         for j in range(i):
             if lists[i] < lists[j]:  # i表示列表最后一位, j表示列表中的每一位
                 lists[i], lists[j] = lists[j], lists[i]
@@ -26,8 +26,10 @@ def bubble_sort(lists):
 
 
 def main():
-    alist = [54, 26, 93, 17, 77, 31, 44, 55, 20]
-    print(bubble_sort(alist))
+    import numpy as np
+    alist = list(np.random.randint(0, 100, size=10))
+    print("排序前:", alist)
+    print("排序后:", bubble_sort(alist))
 
 
 if __name__ == '__main__':

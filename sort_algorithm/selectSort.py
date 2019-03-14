@@ -29,8 +29,9 @@ def select_sort(lists):
 
 def main():
     import numpy as np
-    arr = np.random.randint(0, 100, size=10)
-    print(select_sort(arr))
+    lists = list(np.random.randint(0, 100, size=10))
+    print("排序前", lists)
+    print("排序后", select_sort(lists))
 
 
 if __name__ == '__main__':
