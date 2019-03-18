@@ -1,7 +1,7 @@
 树是什么？
 
     树是数据结构中非常重要的一种，主要的用途是用来提高查找效率，对于要重复查找的情况效果更佳，如二叉排序树、FP-树。另外可以用来提高编码效率，如哈弗曼树。
-![image](https://github.com/qtccz/Practice/blob/master/tree/images/树.jpg)
+![image](https://github.com/qtccz/Practice/blob/master/images/树.jpg)
     
 二叉树定义
 
