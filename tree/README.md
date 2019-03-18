@@ -22,11 +22,11 @@
         
     3、满二叉树
         除了叶结点外每一个结点都有左右子叶且叶子结点都处在最底层的二叉树。(高度为h，有2h-1个结点的树)
-![image](https://github.com/qtccz/Practice/blob/master/tree/images/满二叉树.png)
+![image](https://github.com/qtccz/Practice/blob/master/images/满二叉树.png)
         
     4、完全二叉树
         若设二叉树的高度为h，除第h层外，其它各层(1～h-1)的结点数都达到最大个数，第h层有叶子结点，并且叶子结点都是从左到右依次排布，这就是完全二叉树。 
-![image](https://github.com/qtccz/Practice/blob/master/tree/images/完全二叉树.png)
+![image](https://github.com/qtccz/Practice/blob/master/images/完全二叉树.png)
 
 二叉树遍历
 
@@ -43,7 +43,7 @@
     对于一颗二叉树，深度优先搜索(Depth First Search)是沿着树的深度遍历树的节点，尽可能深的搜索树的分支。
     深度遍历有重要的三种方法，分别叫做先序遍历（preorder），中序遍历（inorder）和后序遍历（postorder），
     它们之间的不同在于访问每个节点的次序不同。
-![image](https://github.com/qtccz/Practice/blob/master/tree/images/二叉树遍历.jpg)
+![image](https://github.com/qtccz/Practice/blob/master/images/二叉树遍历.jpg)
 
     1、先序遍历
         顺序如右：根节点->左子树->右子树  （ABC DEH FGK）
