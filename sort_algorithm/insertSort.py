@@ -19,12 +19,12 @@
 def insert_sort(lists):
     count = len(lists)
     for i in range(1, count):
-        key = lists[i]
-        j = i - 1
-        while j >= 0:
-            if lists[j] > key:
-                lists[j], lists[j + 1] = key, lists[j]
-            j -= 1
+        preIndex = i - 1
+        currentValue = lists[i]
+        while preIndex >= 0:
+            if lists[preIndex] > currentValue:
+                lists[preIndex], lists[preIndex + 1] = currentValue, lists[preIndex]
+            preIndex -= 1
     return lists
 
 
