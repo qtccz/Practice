@@ -19,6 +19,7 @@
 """
 
 
+# 合并
 def merge(left, right):
     i, j = 0, 0
     result = list()
