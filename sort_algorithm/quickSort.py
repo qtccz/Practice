@@ -19,17 +19,19 @@ def quick_sort(array, left, right):
         return
     low = left
     high = right
-    key = array[low]
+    key = array[low]  # 基准数
     while left < right:
+        # 如果右侧的数值大于key，下标前移一位
         while left < right and array[right] > key:
             right -= 1
+        # 数值小的替换到左边
         array[left] = array[right]
-        print('right', array)
+        # 如果左侧的数值小于等于key，下标后移一位
         while left < right and array[left] <= key:
             left += 1
+        # 数值大的替换到右边
         array[right] = array[left]
-        print('left', array)
-    array[right] = key
+    array[right] = key  # 基准数归位
     quick_sort(array, low, left - 1)
     quick_sort(array, left + 1, high)
     return array
