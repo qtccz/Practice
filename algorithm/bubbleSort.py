@@ -19,9 +19,11 @@
 
 def bubble_sort(lists):
     count = len(lists)
-    for lastIndex in range(count - 1, 0, -1):  # range(count - 1, 0, -1) 从大到小依次得到待排序数值次数；次数是逐渐减小
+    # range(count - 1, 0, -1) 从大到小依次得到待排序数值次数；次数是逐渐减小
+    for lastIndex in range(count - 1, 0, -1):
         for j in range(lastIndex):
-            if lists[lastIndex] < lists[j]:  # lastIndex表示列表最后一位, j表示列表中lastIndex之前的每一位
+            # lastIndex表示列表最后一位, j表示列表中lastIndex之前的每一位
+            if lists[lastIndex] < lists[j]:
                 lists[lastIndex], lists[j] = lists[j], lists[lastIndex]
     return lists
 
