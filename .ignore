@@ -115,7 +115,7 @@ dmypy.json
 .pyre/
 
 # jetbrains
-*.idea
+.idea
 
 # mac隐藏文件
 .DS_Store
